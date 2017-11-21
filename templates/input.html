@@ -74,6 +74,56 @@
             clear: both
         }
     </style>
+
+    <style>
+        #new_feedback {
+            font-size: 1em;
+        }
+
+        #new_selectable .ui-selecting {
+            background: #FECA40;
+        }
+
+        #new_selectable .ui-selected {
+            background: #2b542c;
+            color: white;
+        }
+
+        #new_selectable {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 20%;
+        }
+
+        #new_selectable li {
+            margin: 1px;
+            padding: 0;
+            font-size: 1em;
+            height: 30px;
+        }
+
+
+    </style>
+        <script>
+        $(function () {
+            $("#new_selectable").selectable({
+                stop: function () {
+                    var result = $("#new_select-result").empty();
+                    $(".ui-selected", this).each(function () {
+                        var index = $("#new_selectable li").index(this);
+                        result.append();
+                        document.getElementById("new_attribute").value = result;
+                    });
+                }
+            });
+        });
+
+
+    </script>
+
+
+
 </head>
 <body>
 
@@ -140,8 +190,14 @@
                                     <div class="tab-pane active" id="sample_ontology">
                                         <script>
 
-                                            createOntology("sample_ontology", "medicine");
-                                            function createOntology(parent, name) {
+                                            // obj = JSON.parse({{result|tojson}});
+
+                                            var attributes = new Array('id', "disease", "medicine")
+
+                                            //  var  attributes = obj.EXAMPLE_ATTRIBUTS;
+
+                                            createOntology("sample_ontology", "medicine", attributes);
+                                            function createOntology(parent, name, attributes) {
 
                                                 var tab = document.getElementById(parent);
                                                 var ontology = document.createElement("div");
@@ -157,8 +213,9 @@
 
                                                 var ul = document.createElement("ul");
                                                 ul.setAttribute("class", "list-group");
+
+
                                                 setOntologyType(ul, name);
-                                                tab.append(ul);
 
                                                 function setOntologyType(parent, name) {
 
@@ -190,8 +247,8 @@
                                                     input_2.name = name + "_type";
                                                     input_2.className = "inh_type";
 
-                                                    input_2.id="idtest";
-                                                    idtest="#"+input_2.id;
+                                                    input_2.id = "idtest";
+                                                    idtest = "#" + input_2.id;
 
 
                                                     var text_2 = document.createTextNode("  Inheritant OFD");
@@ -225,9 +282,9 @@
                                                     var slider = document.createElement("div");
                                                     slider.className = "slider";
                                                     var bar = document.createElement("div");
-                                                    bar.className="bar";
-                                                    bar.id = name + "_slider";
-                                                    bar_id =bar.id;
+                                                    bar.className = "inhbar";
+                                                    bar.id = name + "_inh_slider";
+                                                    bar_id = bar.id;
 
                                                     var val = document.createElement("div");
                                                     val.className = "val";
@@ -236,9 +293,23 @@
                                                     input_3.value = "1";
 
                                                     var clr = document.createElement("div");
-                                                    clr.className="clr";
+                                                    clr.className = "clr";
 
-
+                                                    $(document).ready(function () {
+                                                        $(idtest).click(function () {
+                                                            alert(input_3.value);
+                                                        });
+                                                        $(".inhbar").slider({
+                                                            min: 0,
+                                                            max: 10,
+                                                            step: 1,
+                                                            value: $(this).parent().next().children().val(),
+                                                            slide: function (event, ui) {
+//                                                            alert(value);
+                                                                $(this).parent().next().children().val(ui.value);
+                                                            }
+                                                        });
+                                                    });
 
                                                     val.append(input_3);
                                                     slider.append(bar);
@@ -250,28 +321,160 @@
                                                     row_2.append(col_4);
                                                     row_2.append(col_5);
                                                     li_2.append(row_2);
+                                                    parent.append(li_1);
+                                                    parent.append(li_2);
+                                                }
+
+                                                setOntologySense(ul, name);
+
+                                                function setOntologySense(parent, name) {
+
+                                                    var li = document.createElement("li");
+                                                    li.setAttribute("class", "list-group-item");
+                                                    var row = document.createElement("div");
+                                                    row.className = "row";
+                                                    var span = document.createElement("div");
+                                                    span.className = "span12";
+                                                    var col_1 = document.createElement("div");
+                                                    col_1.className = "col-lg-4";
+                                                    col_1.innerHTML = "Sense:";
+                                                    var col_2 = document.createElement("div");
+                                                    col_2.className = "col-lg-6";
+
+
+                                                    var input = document.createElement("input");
+
+                                                    input.setAttribute("type", "text");
+                                                    input.setAttribute("class", "form-control");
+                                                    input.name = name + "_sense";
+                                                    input.setAttribute("placeholder", "Can be anything");
+                                                    input.setAttribute("aria-describedby", "basic-addon1");
+                                                    col_2.append(input);
+
+                                                    span.append(col_1);
+                                                    span.append(col_2);
+                                                    row.append(span);
+                                                    li.append(row);
+                                                    parent.append(li);
+                                                }
+
+                                                setOntologyThreshold(ul, name);
+                                                function setOntologyThreshold(parent, name) {
+
+                                                    var li = document.createElement("li");
+                                                    li.setAttribute("class", "list-group-item");
+                                                    var row = document.createElement("div");
+                                                    row.className = "row";
+                                                    var span = document.createElement("div");
+                                                    span.className = "span12";
+                                                    var col_1 = document.createElement("div");
+                                                    col_1.className = "col-lg-4";
+                                                    col_1.innerHTML = "Threshold:";
+                                                    var col_2 = document.createElement("div");
+                                                    col_2.className = "col-lg-8";
+
+                                                    var slider_box = document.createElement("div");
+                                                    slider_box.className = "slider-box";
+                                                    var item = document.createElement("div");
+                                                    item.className = "item";
+
+                                                    var slider = document.createElement("div");
+                                                    slider.className = "slider";
+                                                    var bar = document.createElement("div");
+                                                    bar.className = "bar";
+                                                    bar.id = name + "_slider";
+                                                    bar_id = bar.id;
+
+                                                    var val = document.createElement("div");
+                                                    val.className = "val";
+                                                    var input_3 = document.createElement("input");
+                                                    input_3.name = name + "_threshold";
+                                                    input_3.value = "1";
+
+                                                    var clr = document.createElement("div");
+                                                    clr.className = "clr";
 
                                                     $(document).ready(function () {
                                                         $(idtest).click(function () {
                                                             alert(input_3.value);
                                                         });
+                                                        $(".bar").slider({
+                                                            min: 0,
+                                                            max: 100,
+                                                            step: 10,
+                                                            value: $(this).parent().next().children().val(),
+                                                            slide: function (event, ui) {
+                                                                $(this).parent().next().children().val(ui.value);
+                                                            }
+                                                        });
                                                     });
 
-                                                    $(".bar").slider( {
-                                                        min:0,
-                                                        max:10,
-                                                        step:1,
-                                                        value: $(this).closest("input").val(),
-                                                        slide: function (event, ui) {
-//                                                            alert(value);
-                                                            $(this).closest("input").val(ui.value);
-                                                        }
-                                                    });
-                                                    parent.append(li_1);
-                                                    parent.append(li_2);
+                                                    val.append(input_3);
+                                                    slider.append(bar);
+                                                    item.append(slider);
+                                                    item.append(val);
+                                                    slider_box.append(item);
+                                                    slider_box.append(clr);
+                                                    col_2.append(slider_box);
+                                                    row.append(col_1);
+                                                    row.append(col_2);
+                                                    li.append(row);
+                                                    parent.append(li);
                                                 }
+
+
+                                                setOntologyAttribute(ul, name);
+                                                tab.append(ul);
+
+                                                function setOntologyAttribute(parent, name, attributes) {
+
+                                                    var li = document.createElement("li");
+                                                    li.setAttribute("class", "list-group-item");
+                                                    var row = document.createElement("div");
+                                                    row.className = "row";
+                                                    var span = document.createElement("div");
+                                                    span.className = "span12";
+                                                    var col_1 = document.createElement("div");
+                                                    col_1.className = "col-lg-5";
+                                                    col_1.innerHTML = "Choose corresponding attribute:";
+                                                    var col_2 = document.createElement("div");
+                                                    col_2.className = "col-lg-5";
+
+
+                                                    var p = document.createElement("p");
+                                                    p.id = name + "_feedback";
+                                                    var span = document.createElement("span");
+                                                    span.id = name + "_select_result";
+                                                    p.append(span);
+                                                    ;
+                                                    var ol = document.createElement("ol");
+                                                    ol.id = name + "_selectable";
+
+                                                    for (var i = 0; i < attributes.length; i++) {
+                                                        var li = document.createElement("li");
+                                                        li.className = "ui-widget-content";
+                                                        li.innerHTML = attributes[i];
+                                                        ol.append(li);
+                                                    }
+                                                    col_2.append(p);
+                                                    col_2.append(ol)
+
+                                                    span.append(col_1);
+                                                    span.append(col_2);
+                                                    row.append(span);
+                                                    li.append(row);
+                                                    parent.append(li);
+
+
+                                                }
+
+
                                             }
+
+
                                         </script>
+
+
                                     </div>
                                     <div class="tab-pane active" id="upload_ontology">
                                     </div>
