@@ -225,61 +225,57 @@
                                                     var slider = document.createElement("div");
                                                     slider.className = "slider";
                                                     var bar = document.createElement("div");
+                                                    bar.className="bar";
                                                     bar.id = name + "_slider";
-                                                    bar_id = "#" + bar.id;
+                                                    bar_id =bar.id;
 
                                                     var val = document.createElement("div");
                                                     val.className = "val";
                                                     var input_3 = document.createElement("input");
                                                     input_3.name = name + "_inh_threshold";
-
                                                     input_3.value = "1";
+
+                                                    var clr = document.createElement("div");
+                                                    clr.className="clr";
+
+
+
                                                     val.append(input_3);
                                                     slider.append(bar);
                                                     item.append(slider);
                                                     item.append(val);
                                                     slider_box.append(item);
+                                                    slider_box.append(clr);
                                                     col_5.append(slider_box);
                                                     row_2.append(col_4);
                                                     row_2.append(col_5);
                                                     li_2.append(row_2);
 
                                                     $(document).ready(function () {
-
                                                         $(idtest).click(function () {
                                                             alert(input_3.value);
                                                         });
                                                     });
 
-                                                    $(bar_id).slider( {
+                                                    $(".bar").slider( {
                                                         min:0,
                                                         max:10,
                                                         step:1,
-                                                        value: input_3.value,
+                                                        value: $(this).closest("input").val(),
                                                         slide: function (event, ui) {
 //                                                            alert(value);
-                                                            $(input_3).val(ui.value);
+                                                            $(this).closest("input").val(ui.value);
                                                         }
                                                     });
-
-
                                                     parent.append(li_1);
                                                     parent.append(li_2);
-
-
                                                 }
-
-
                                             }
-
-
                                         </script>
                                     </div>
                                     <div class="tab-pane active" id="upload_ontology">
-
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
