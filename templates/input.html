@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>MacClean</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap Css -->
+    <link href="../static/bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link href="../static/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="../static/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="../static/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="../static/plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet">
+    <link href="../static/plugins/Icons/et-line-font/style.css" rel="stylesheet">
+    <link href="../static/plugins/animate.css/animate.css" rel="stylesheet">
+    <link href="../static/css/main.css" rel="stylesheet">
+    <style>
+        .slider-box {
+            font-family: Microsoft Yahei;
+            padding-bottom: 10px
+        }
+
+        .slider-box .item {
+            padding: 10px
+        }
+
+        .slider-box .item .tag, .slider-box .item .slider, .slider-box .item .val {
+            float: left;
+            margin-right: 18px
+        }
+
+        .slider-box .item .slider {
+            width: 400px
+        }
+
+        .slider-box .item .slider div {
+            background: #8FBF0B;
+            border: none;
+            height: 0.5em;
+            margin-top: 0.5em
+        }
+
+        .slider-box .item .slider div .ui-slider-handle {
+            background: #F4F3F1;
+            width: 1em;
+            height: 1em;
+            border-radius: 1em
+        }
+
+        .slider-box .item .val input {
+            border: none;
+            border-bottom: 1px solid #ABADA8;
+            background: none;
+            padding: 0.1em 1em;
+            color: #E4531C;
+            font-weight: bold;
+            font-size: 1em;
+            width: 5em;
+            text-align: center
+        }
+
+        .clr {
+            clear: both
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div class="container-fluid" style="background:#000;color:#FFFFFF">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="row-fluid">
+                    <div class="col-lg-6">
+                        <img src="../static/img/logo/mcmaster_logo.png" height="60" width="50"
+                             style="margin-left:100px"/>
+                    </div>
+                    <div class="col-lg-6">
+                        <font color="white" size="40px" style="margin-left:-200px;">F A S T O F D</font>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="col-lg-3">
+            <div>
+                <legend>Choose Datasets</legend>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="dataset" id="example_1" value="example_1">
+                        <p class="btn" style="font-size: large ;size:10px;margin-top: -5px">
+                            Clinical Trails</p>
+                    </label>
+                </div>
+
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="dataset" id="upload" value="upload">
+                        <p class="btn" style="font-size: large ;size:10px;margin-top: -5px">Upload your own
+                            data</p>
+                    </label>
+                    <p style=" margin-left: 30px;"><input type=file name=upload_file></p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-9">
+            <legend>Ontology Setting</legend>
+            <div>
+                <div class="container-fluid">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <div class="tabbable">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a href="#sample_ontology" data-toggle="tab">Sample Ontologies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#upload_ontology" data-toggle="tab">Upload your own Ontology</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="sample_ontology">
+                                        <script>
+
+                                            createOntology("sample_ontology", "medicine");
+                                            function createOntology(parent, name) {
+
+                                                var tab = document.getElementById(parent);
+                                                var ontology = document.createElement("div");
+                                                ontology.className = "accordion";
+                                                ontology.id = name;
+
+                                                var heading = document.createElement("span");
+                                                heading.setAttribute("class", "label label-primary");
+                                                heading.innerHTML = name;
+                                                ontology.style.marginTop = "10px";
+                                                ontology.append(heading);
+                                                tab.append(ontology);
+
+                                                var ul = document.createElement("ul");
+                                                ul.setAttribute("class", "list-group");
+                                                setOntologyType(ul, name);
+                                                tab.append(ul);
+
+                                                function setOntologyType(parent, name) {
+
+                                                    var li_1 = document.createElement("li");
+                                                    li_1.setAttribute("class", "list-group-item");
+                                                    var row_1 = document.createElement("div");
+                                                    row_1.className = "row";
+                                                    var span = document.createElement("div");
+                                                    span.className = "span12";
+                                                    var col_1 = document.createElement("div");
+                                                    col_1.className = "col-lg-4";
+                                                    col_1.innerHTML = "Relationship Type:";
+                                                    var col_2 = document.createElement("div");
+                                                    col_2.className = "col-lg-4";
+
+                                                    var input_1 = document.createElement("input");
+                                                    input_1.setAttribute("type", "radio");
+                                                    input_1.name = name + "_type";
+
+                                                    var text_1 = document.createTextNode("  Synonym OFD");
+
+                                                    col_2.appendChild(input_1);
+                                                    col_2.append(text_1);
+
+                                                    var col_3 = document.createElement("div");
+                                                    col_3.className = "col-lg-4";
+                                                    var input_2 = document.createElement("input");
+                                                    input_2.setAttribute("type", "radio");
+                                                    input_2.name = name + "_type";
+                                                    input_2.className = "inh_type";
+
+                                                    input_2.id="idtest";
+                                                    idtest="#"+input_2.id;
+
+
+                                                    var text_2 = document.createTextNode("  Inheritant OFD");
+
+                                                    col_3.append(input_2);
+                                                    col_3.append(text_2);
+                                                    span.append(col_1);
+                                                    span.append(col_2);
+                                                    span.append(col_3);
+                                                    row_1.append(span);
+                                                    li_1.append(row_1);
+
+
+                                                    var li_2 = document.createElement("li");
+                                                    li_2.setAttribute("class", "list-group-item");
+                                                    li_2.id = name + "_inh_threshold";
+                                                    var row_2 = document.createElement("div");
+                                                    row_2.className = "row";
+                                                    var col_4 = document.createElement("div");
+                                                    col_4.className = "col-lg-4";
+                                                    col_4.innerHTML = "Inheritant Threshold:";
+
+                                                    var col_5 = document.createElement("div");
+                                                    col_5.className = "col-lg-8";
+                                                    var slider_box = document.createElement("div");
+                                                    slider_box.className = "slider-box";
+                                                    var item = document.createElement("div");
+                                                    item.className = "item";
+
+
+                                                    var slider = document.createElement("div");
+                                                    slider.className = "slider";
+                                                    var bar = document.createElement("div");
+                                                    bar.id = name + "_slider";
+                                                    bar_id = "#" + bar.id;
+
+                                                    var val = document.createElement("div");
+                                                    val.className = "val";
+                                                    var input_3 = document.createElement("input");
+                                                    input_3.name = name + "_inh_threshold";
+
+                                                    input_3.value = "1";
+                                                    val.append(input_3);
+                                                    slider.append(bar);
+                                                    item.append(slider);
+                                                    item.append(val);
+                                                    slider_box.append(item);
+                                                    col_5.append(slider_box);
+                                                    row_2.append(col_4);
+                                                    row_2.append(col_5);
+                                                    li_2.append(row_2);
+
+                                                    $(document).ready(function () {
+
+                                                        $(idtest).click(function () {
+                                                            alert(input_3.value);
+                                                        });
+                                                    });
+
+                                                    $(bar_id).slider( {
+                                                        min:0,
+                                                        max:10,
+                                                        step:1,
+                                                        value: input_3.value,
+                                                        slide: function (event, ui) {
+//                                                            alert(value);
+                                                            $(input_3).val(ui.value);
+                                                        }
+                                                    });
+
+
+                                                    parent.append(li_1);
+                                                    parent.append(li_2);
+
+
+                                                }
+
+
+                                            }
+
+
+                                        </script>
+                                    </div>
+                                    <div class="tab-pane active" id="upload_ontology">
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</div>
+
+
+</body>
+
+
+</html>
