@@ -76,6 +76,8 @@
 
 
 
+
+
     </style>
     <style>
 
@@ -102,6 +104,8 @@
             height: 30px;
             width: 100px;
         }
+
+
 
     </style>
 
@@ -207,7 +211,7 @@
                         </label>
                     </div>
 
-                     <div class="radio">
+                    <div class="radio">
                         <label>
                             <input type="radio" name="algorithm" value="tane">
                             <p class="btn" style="font-size: large ;size:10px;margin-top: -5px">
@@ -242,20 +246,32 @@
 
                                         </div>
                                         <div class="tab-pane active" id="upload_ontology">
+
+                                            <button type="button"
+                                                   class="btn btn-large btn-success"
+                                                   name="submit"
+                                            >  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>ADD ONTOLOGY</button>
                                         </div>
+
+
+
+
+
+
                                     </div>
-                                    <div id="ontology_list">
-                                        <legend>Chosen Ontologies</legend>
-                                    </div>
+                                </div>
+                                <div id="ontology_list">
+                                    <legend>Chosen Ontologies</legend>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
+
+
         </div>
+    </div>
     </div>
     <input type="submit"
            class="btn  btn-md btn-block"
@@ -727,6 +743,8 @@
             inputform.append(checka);
         });
     });
+
+
 
 </script>
 
