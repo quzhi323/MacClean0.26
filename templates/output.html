@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>MacClean</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- Bootstrap Css -->
+    <link href="../static/bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Style -->
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link href="../static/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="../static/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="../static/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="../static/plugins/Lightbox/dist/css/lightbox.css" rel="stylesheet">
+    <link href="../static/plugins/Icons/et-line-font/style.css" rel="stylesheet">
+    <link href="../static/plugins/animate.css/animate.css" rel="stylesheet">
+    <link href="../static/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<section>
+    <div class="container-fluid" style="background:#000;color:#FFFFFF">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="row-fluid">
+                    <div class="col-lg-6">
+                        <img src="../static/img/logo/mcmaster_logo.png" height="60" width="50"
+                             style="margin-left:100px"/>
+                    </div>
+                    <div class="col-lg-6">
+                        <font color="white" size="40px" style="margin-left:-200px;">F a s t O F D</font>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<legend><span class="glyphicon glyphicon-th-list" aria-hidden="true" style="margin-left:20px"></span> Input Data
+</legend>
+
+<div class="container-fluid" style="margin-top:-25px">
+    <div class="row-fluid">
+        <div class="span12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        <a> Name: <a/><a id="data_name"></a>
+                    </th>
+                    <th>
+                        <a># Columns: </a><a id="num_col"></a>
+                    </th>
+                    <th>
+                        <a># Rows: </a><a id="num_row"></a>
+                    </th>
+                    <th>
+                        <a># Ontologies</a><a id="num_ontologies"></a>
+                    </th>
+
+                </tr>
+
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+<legend style="margin-top:-10px"><span class="glyphicon glyphicon-th-list" aria-hidden="true"
+                                       style="margin-left:20px"></span> Result Information
+</legend>
+<div class="container-fluid" style="margin-top:-25px">
+    <div class="row-fluid">
+        <div class="span12">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        <a># FD: </a><a id="num_fd"></a>
+                    </th>
+                    <th>
+                        <a># Synonym OFD: </a><a id="num_syn_ofd"></a>
+                    </th>
+                    <th>
+                        <a># Inheritance OFD: </a><a id="num_inh_ofd"></a>
+                    </th>
+                    <th>
+                        <a># Synonym Approximate OFD: </a> <a id="num_syn_aofd"></a>
+                    </th>
+                    <th>
+                        <a> # Inheritance Approximate OFD: </a> <a id="num_inh_aofd"></a>
+                    </th>
+
+                </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</div>
+
+<section>
+    <legend style="margin-left: 20px;margin-top:-10px"><span class="glyphicon glyphicon-search"
+                                                             aria-hidden="true"></span> Details
+    </legend>
+    <div class="container-fluid" style="margin-top:-20px">
+        <div class="row-fluid">
+            <div class="span12">
+                <div class="tabbable" id="tabs-10414">
+                    <ul class="nav nav-tabs">
+
+                        <li>
+                            <a href="#panel-syn_ofd" data-toggle="tab">Synonym </a>
+                        </li>
+
+                        <li>
+                            <a href="#panel-inh_ofd" data-toggle="tab">Inheritance </a>
+                        </li>
+
+
+                    </ul>
+
+                    <div class="tab-content">
+
+                        <div class="tab-pane active" id="panel-syn_ofd">
+
+                            <div class="container-fluid">
+                                <div class="row-fluid">
+                                    <div class="span12">
+                                        <div class="accordion" id="accordion-229303">
+                                            <div class="accordion-group">
+                                                <div class="accordion-heading">
+                                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                                       data-parent="#accordion-229303" href="#accordion-element-112559"
+                                                       style="margin-top:-10px"><h4>OFD</h4></a>
+                                                </div>
+                                                <div id="accordion-element-112559" class="accordion-body collapse">
+                                                    <div class="accordion-inner" id="syn_ofd_list">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-group">
+                                                <div class="accordion-heading">
+                                                    <a class="accordion-toggle" data-toggle="collapse"
+                                                       data-parent="#accordion-229303" href="#accordion-element-639785"
+                                                       style="margin-top:-10px"><h4>Approximate OFD</span>
+                                                    </h4></a>
+                                                </div>
+                                                <div id="accordion-element-639785" class="accordion-body collapse">
+                                                    <div class="accordion-inner" id="panel-syn_aofd">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane" id="panel-inh_ofd">
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+
+<script>
+
+    obj = JSON.parse({{result|tojson}});
+    var data_name=obj.DATA_NAME;
+    var num_row=obj.NUM_ROW;
+    var num_col=obj.NUM_COL;
+    var num_fd=obj.NUM_FD;
+    var num_syn_ofd=obj.NUM_SYN_OFD;
+    var num_inh_ofd=obj.NUM_INH_OFD;
+    var num_syn_aofd=obj.NUM_SYN_AOFD;
+    var num_inh_aofd=obj.NUM_INH_AOFD;
+    var attributes= obj.ATTRIBUTES;
+    var syn_ofd=obj.OFD[1];
+    var inh_ofd=obj.OFD[2];
+    var aofd=obj.AOFD;
+    var num_ontologies =obj.NUM_ONTOLOGIES;
+
+    function addInfo(parentId,num){
+        var parent=document.getElementById(parentId);
+        parent.innerHTML="  "+num;
+    }
+
+    addInfo("num_row",num_row);
+    addInfo("num_col",num_col);
+    addInfo("data_name",data_name);
+    addInfo("num_ontologies",num_ontologies);
+
+    addInfo("num_fd",num_fd);
+    addInfo("num_syn_ofd",num_syn_ofd);
+    addInfo("num_inh_ofd",num_inh_ofd);
+    addInfo("num_syn_aofd",num_syn_aofd);
+    addInfo("num_inh_aofd",num_inh_aofd);
+
+
+    function postAttributes(parentId,attributes){
+
+        var parent = document.getElementById(parentId);
+        var thead = document.createElement("thead");
+        var tr=document.createElement("tr");
+        for (var i=0;i<attributes.length;i++)
+        {
+            var attr=document.createElement("th");
+            attr.innerHTML=attributes[i];
+            tr.append(attr);
+        }
+        thead.append(tr);
+        parent.append(thead);
+    }
+
+    function postD(parentId,ds){
+
+        var parent = document.getElementById(parentId);
+
+        for(var i=0;i<ds.length;i++){
+            var a =document.createElement("a");
+            a.className="list-group-item list-group-item-success";
+            a.innerHTML=ds[i];
+            parent.append(a);
+        }
+    }
+    postD("syn_ofd_list",syn_ofd);
+    <!--postD("",ofd);-->
+
+
+
+
+    var aofds = obj.AOFD;
+    var syn_aofd = aofds[0];
+    var isa_aofd = aofds[1];
+
+
+    var syn_aofd_panel = document.getElementById("panel-syn_aofd");
+
+    <!--var isaaofd_panel = document.getElementById("panel-isa_aofd");-->
+
+    var validate = {};
+
+    var support_dict = {};
+
+    createAccordion(syn_aofd, syn_aofd_panel);
+    <!--createAccordion(isa_aofd, isa_aofd_panel);-->
+
+    function createAccordion(list, panel) {
+
+    for (var i = 0; i < list.length; i++) {
+        var accordion = document.createElement("div");
+        accordion.className = 'accordion';
+        accordion.id = list[i].ID;
+        var accordionGroup = document.createElement("div");
+        accordionGroup.className = "accordion-group";
+        var accordionHeading = document.createElement("div");
+        accordionHeading.className = "accordion-heading";
+        var accordionToggle = document.createElement("a");
+        accordionToggle.className = "accordion-toggle";
+        accordionToggle.setAttribute("href", "#" + list[i].ID + list[i].TYPE);
+        accordionToggle.setAttribute("data-toggle", "collapse");
+        accordionToggle.setAttribute("data-parent", "#" + list[i].ID);
+        accordionToggle.innerHTML = list[i].FD;
+
+
+        accordionToggle.setAttribute("font-size","50px");
+
+        var myArray=new Array();
+        myArray[0]=list[i].NUMBER_OF_ERROR;
+        myArray[1]=list[i].TOTAL;
+        support_dict[String(list[i].ID)]=myArray;
+        <!--alert(list[i].ID);-->
+        <!--alert(myArray);-->
+        <!--var row = document.createElement("div");-->
+        <!--row.className="row";-->
+        <!--var col1=document.createElement("div");-->
+        <!--col1.className="col-lg-5";-->
+        <!--var col2=document.createElement("div");-->
+        <!--col2.className="col-lg-4";-->
+
+        var error_space = document.createElement("h7");
+        <!--error_space.style.marginLeft="0px";-->
+        var span =document.createElement("a");
+        span.id=list[i].ID+"span";
+        <!--span.setAttribute("class","label label-default");-->
+
+        var support = (100-list[i].ERROR_RATE)/100;
+        var str_support=support.toString()
+        span.innerHTML="Support &tau;:  "+ str_support;
+        error_space.append(span);
+        error_space.style.marginLeft="40px";
+
+
+
+        var this_sense = document.createElement("h7");
+        var span2 =document.createElement("a");
+        span2.innerHTML="Sense: "+list[i].SENSE;
+        this_sense.append(span2);
+        this_sense.style.marginLeft="40px";
+
+
+
+
+        <!--col1.append(accordionToggle);-->
+        <!--col2.append(error_space);-->
+
+        <!--row.append(col1);-->
+        <!--row.append(col2);-->
+
+
+        var accordionBody = document.createElement("div");
+        accordionBody.className = "accordion-body collapse";
+        accordionBody.id = String(list[i].ID) + list[i].TYPE;
+        var accordionInner = document.createElement("div");
+        accordionInner.className = "accordion-inner";
+
+        var violation = list[i].VIOLATION;
+
+
+        for (var j = 0; j < violation.length; j++) {
+            var attr = document.createElement("a");
+            attr.setAttribute("href", "#");
+            attr.className = "list-group-item list-group-item-warning";
+            <!--accordionInner.append(attr);-->
+            attr.innerHTML = violation[j].PATTERN;
+
+            var table = document.createElement("table");
+            table.className = "table";
+            var thead = document.createElement("thead");
+            var tr = document.createElement("tr");
+            var col = violation[j].CORRECT_COL;
+            var error = violation[j].ERROR_COL;
+            col.push(error);
+            for (var k = 0; k < col.length; k++) {
+                var th = document.createElement("th");
+                th.innerHTML = list[i].ATTRIBUTES[col[k]];
+                tr.append(th);
+            }
+            thead.append(tr);
+            table.append(thead);
+            var tbody = document.createElement("tbody");
+            var correctTuple = violation[j].CORRECT_TUPPLES;
+            var errorTuple = violation[j].ERROR_TUPPLES;
+            for (var l = 0; l < correctTuple.length; l++) {
+                insertTr(col, correctTuple[l], tbody);
+            }
+            for (var m = 0; m < errorTuple.length; m++) {
+                insertError(col, errorTuple[m], tbody, String(list[i].ID) +"*"+ violation[j].VID);
+            }
+            table.append(tbody);
+            function insertTr(col, tuple, tbody) {
+                var tr = document.createElement("tr");
+                tr.className = "success";
+
+                for (var i = 0; i < col.length; i++) {
+                    var td = document.createElement("td");
+                    td.innerHTML = tuple.CELLS[col[i]];
+                    tr.append(td);
+                }
+
+                tbody.append(tr);
+            }
+
+            function insertError(col, tuple, tbody, id) {
+                var tr = document.createElement("tr");
+                tr.className = "danger";
+
+                for (var i = 0; i < col.length; i++) {
+                    var td = document.createElement("td");
+                    if (i == col.length - 1) {
+                        var lg = document.createElement("div");
+                        lg.className = "col-lg-6";
+                        var inputGroup = document.createElement("div");
+                        inputGroup.className = "input-group";
+                        var input = document.createElement("input");
+                        input.className = "form-control";
+                        input.type = "text";
+                        input.setAttribute("value", tuple.CELLS[col[i]]);
+                        var span = document.createElement("span");
+                        span.className = "input-group-btn";
+                        var button = document.createElement("button");
+                        button.className = "btn btn-primary editbtn";
+                        button.id = String(id)+"*"+tuple.ROW;
+                        validate[String(id) + "*"+tuple.ROW] = tuple.REPAIR_CANDIDATE;
+                        button.type = "button";
+                        button.innerHTML = "Apply";
+                        span.append(button);
+                        inputGroup.append(input);
+                        inputGroup.append(span);
+                        lg.append(inputGroup);
+                        td.append(lg);
+                    }
+                    else {
+                        td.innerHTML = tuple.CELLS[col[i]];
+                    }
+                    tr.append(td);
+                }
+
+                tbody.append(tr);
+            }
+
+            accordionInner.append(table);
+        }
+
+        accordionBody.append(accordionInner);
+        accordionHeading.append(accordionToggle);
+
+        accordionHeading.append(error_space);
+        accordionHeading.append(this_sense);
+
+
+        accordionGroup.append(accordionHeading);
+        accordionGroup.append(accordionBody);
+        accordion.append(accordionGroup);
+        panel.append(accordion);
+    }
+}
+
+
+$(document).ready(function () {
+    function in_array(string, arr) {
+    for (var i = 0; i < arr.length; i++){
+        if (string.toLowerCase() == arr[i].toLowerCase()) {
+            return true;
+        }
+    }
+    return false;
+}
+  $(".editbtn").click(function () {
+        //alert($(this).parent().prev().val());
+        var thisid = $(this).attr('id');
+        idvalue=thisid.split("*")[0];
+        <!--alert(idvalue);-->
+        var array =support_dict[String(idvalue)];
+        <!--alert(array);-->
+
+        numerror=support_dict[idvalue][0]
+        numtotal=support_dict[idvalue][1]
+
+        if (in_array($(this).parent().prev().val(), validate[$(this).attr("id")])) {
+
+            $(this).closest("tr").attr("class","success");
+            alert("correct fix!");
+
+            numerror=numerror-1;
+
+            t=1-numerror/numtotal;
+
+            var span = document.getElementById(idvalue+"span");
+            span.innerHTML="Support &tau;： "+ String(t);
+            alert("Now, the support &tau; is: "+String(t));
+            support_dict[idvalue][0]=numerror;
+
+            <!--alert(idvalue);-->
+            <!--alert(span.id);-->
+            <!--alert(t);-->
+
+            <!--support_dict[idvalue][0]=numerror;-->
+
+            span.setAttribute("class","label label-success");
+
+
+            // document.getElementById("fix_tr").className="success";
+        } else {
+
+            if ($(this).closest("tr").attr("class") == "danger"){
+
+            alert("wrong fix!");
+
+            }
+            else{
+
+            $(this).closest("tr").attr("class","danger");
+            alert("wrong fix!");
+
+            <!--numerror=numerror+1;-->
+
+            t=1-numerror/numtotal;
+            var span = document.getElementById(idvalue+"span");
+            span.innerHTML="Support &tau;： "+ String(t);
+            <!--alert(idvalue);-->
+            <!--alert(span.id);-->
+            alert("Now, the support &tau; is"+String(t));
+            support_dict[idvalue][0]=numerror;
+
+            <!--span.setAttribute("class","label label-success");-->
+
+            span.setAttribute("class","label label-danger");
+
+            }
+        }
+
+
+
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
