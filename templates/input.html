@@ -142,6 +142,20 @@
                                 Clinical</p>
                         </label>
                     </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="dataset" id="example_2" value="example_2">
+                            <p class="btn" style="font-size: large ;size:10px;margin-top: -5px">
+                                Pollution</p>
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="dataset" id="example_3" value="example_3">
+                            <p class="btn" style="font-size: large ;size:10px;margin-top: -5px">
+                                Census</p>
+                        </label>
+                    </div>
 
                     <div class="radio">
                         <label>
@@ -209,7 +223,7 @@
                 </div>
             </div>
             <div class="col-lg-9">
-                <legend>Ontology Setting</legend>
+                <legend>Ontology</legend>
                 <div>
                     <div class="container-fluid">
                         <div class="row-fluid">
@@ -318,9 +332,10 @@
 
     var ontology_name_list =new Array();
 
+    createOntology("sample_ontology", "medicine", attributes);
     createOntology("sample_ontology", "countrycode", attributes);
     createOntology("sample_ontology", "disease", attributes);
-    createOntology("sample_ontology", "medicine-EU", attributes);
+
     createOntology("sample_ontology", "medicine-US", attributes);
 
 
@@ -403,7 +418,7 @@
             row_2.className = "row";
             var col_4 = document.createElement("div");
             col_4.className = "col-lg-4";
-            col_4.innerHTML = "Inheritance Threshold &theta;:";
+            col_4.innerHTML = "&theta; (unavailable now):";
 
             var col_5 = document.createElement("div");
             col_5.className = "col-lg-3";
@@ -412,7 +427,7 @@
             var item = document.createElement("div");
             item.className = "item";
 
-            slider_box.style.marginLeft="-90px";
+            slider_box.style.marginLeft="-120px";
 
             var slider = document.createElement("div");
             slider.className = "slider";
@@ -489,7 +504,7 @@
             span12.className = "span12";
             var col_1 = document.createElement("div");
             col_1.className = "col-lg-5";
-            col_1.innerHTML = "Choose corresponding attribute:";
+            col_1.innerHTML = "Select corresponding attribute:";
             var col_2 = document.createElement("div");
             col_2.className = "col-lg-5";
             var p = document.createElement("p");

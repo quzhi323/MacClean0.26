@@ -65,10 +65,11 @@
                         <a># Columns: </a><a id="num_col"></a>
                     </th>
                     <th>
-                        <a># Rows: </a><a id="num_row"></a>
+                        <!--<a id="num_row"></a>-->
+                        <a># Rows: </a><a>3000</a>
                     </th>
                     <th>
-                        <a># Ontologies</a><a id="num_ontologies"></a>
+                        <a># Ontologies: </a><a id="num_ontologies"></a>
                     </th>
 
                 </tr>
@@ -209,7 +210,7 @@
         parent.innerHTML="  "+num;
     }
 
-    addInfo("num_row",num_row);
+    <!--addInfo("num_row",num_row);-->
     addInfo("num_col",num_col);
     addInfo("data_name",data_name);
     addInfo("num_ontologies",num_ontologies);
@@ -360,8 +361,13 @@
                 th.innerHTML = list[i].ATTRIBUTES[col[k]];
                 tr.append(th);
             }
+            var th = document.createElement("th");
+            th.innerHTML = "Frequency";
+            tr.append(th);
             thead.append(tr);
             table.append(thead);
+
+
             var tbody = document.createElement("tbody");
             var correctTuple = violation[j].CORRECT_TUPPLES;
             var errorTuple = violation[j].ERROR_TUPPLES;
@@ -372,6 +378,8 @@
                 insertError(col, errorTuple[m], tbody, String(list[i].ID) +"*"+ violation[j].VID);
             }
             table.append(tbody);
+
+
             function insertTr(col, tuple, tbody) {
                 var tr = document.createElement("tr");
                 tr.className = "success";
@@ -381,6 +389,10 @@
                     td.innerHTML = tuple.CELLS[col[i]];
                     tr.append(td);
                 }
+
+                var td = document.createElement("td");
+                td.innerHTML=tuple.FREQUENCY;
+                tr.append(td);
 
                 tbody.append(tr);
             }
@@ -392,15 +404,29 @@
                 for (var i = 0; i < col.length; i++) {
                     var td = document.createElement("td");
                     if (i == col.length - 1) {
-                        var lg = document.createElement("div");
-                        lg.className = "col-lg-6";
-                        var inputGroup = document.createElement("div");
-                        inputGroup.className = "input-group";
+                        <!--var lg = document.createElement("div");-->
+                        <!--lg.className = "col-lg-6";-->
+                        <!--var inputGroup = document.createElement("div");-->
+                        <!--inputGroup.className = "input-group";-->
                         var input = document.createElement("input");
                         input.className = "form-control";
                         input.type = "text";
-                        input.setAttribute("value", tuple.CELLS[col[i]]);
-                        var span = document.createElement("span");
+                        input.setAttribute("placeholder", tuple.CELLS[col[i]]);
+                        input.style.width="200px";
+                        <!--inputGroup.append(input);-->
+                        <!--inputGroup.append(span);-->
+                        <!--lg.append(inputGroup);-->
+                        td.append(input);
+                    }
+                    else {
+                        td.innerHTML = tuple.CELLS[col[i]];
+                    }
+
+
+                    tr.append(td);
+                }
+                 var td= document.createElement("td");
+                 var span = document.createElement("span");
                         span.className = "input-group-btn";
                         var button = document.createElement("button");
                         button.className = "btn btn-primary editbtn";
@@ -409,16 +435,9 @@
                         button.type = "button";
                         button.innerHTML = "Apply";
                         span.append(button);
-                        inputGroup.append(input);
-                        inputGroup.append(span);
-                        lg.append(inputGroup);
-                        td.append(lg);
-                    }
-                    else {
-                        td.innerHTML = tuple.CELLS[col[i]];
-                    }
-                    tr.append(td);
-                }
+                        td.append(span);
+
+                 tr.append(td);
 
                 tbody.append(tr);
             }
@@ -518,6 +537,8 @@ $(document).ready(function () {
 
     });
 });
+
+
 
 
 
