@@ -13,12 +13,12 @@
     <!-- Bootstrap Css -->
     <link href="../static/bootstrap-assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Style -->
-    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
     <link href="../static/plugins/owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="../static/plugins/owl-carousel/owl.theme.css" rel="stylesheet">
     <link href="../static/plugins/owl-carousel/owl.transitions.css" rel="stylesheet">
@@ -49,7 +49,7 @@
 
 </section>
 
-<legend><span class="glyphicon glyphicon-th-list" aria-hidden="true" style="margin-left:20px"></span> Input Data
+<legend style="margin-left:20px"><span class="label label-default">Input</span>
 </legend>
 
 <div class="container-fluid" style="margin-top:-25px">
@@ -58,19 +58,22 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th>
-                        <a> Name: <a/><a id="data_name"></a>
-                    </th>
-                    <th>
-                        <a># Columns: </a><a id="num_col"></a>
-                    </th>
-                    <th>
+                    <td>
+                        <span> Name: </span><span id="data_name"></span>
+                    </td>
+                    <td>
+                        <span># Columns: </span><span id="num_col"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <!--<a id="num_row"></a>-->
-                        <a># Rows: </a><a>3000</a>
-                    </th>
-                    <th>
-                        <a># Ontologies: </a><a id="num_ontologies"></a>
-                    </th>
+                        <span># Rows: </span><span id="num_row"></span>
+                    </td>
+                    <td>
+                        <!--id="num_ontologies"-->
+                        <span># Ontologies: </span><span id="num_ontologies"></span>
+                    </td>
 
                 </tr>
 
@@ -79,8 +82,7 @@
         </div>
     </div>
 </div>
-<legend style="margin-top:-10px"><span class="glyphicon glyphicon-th-list" aria-hidden="true"
-                                       style="margin-left:20px"></span> Result Information
+<legend style="margin-top:-10px;margin-left:20px"><span class="label label-default">Results</span>
 </legend>
 <div class="container-fluid" style="margin-top:-25px">
     <div class="row-fluid">
@@ -88,21 +90,25 @@
             <table class="table">
                 <thead>
                 <tr>
-                    <th>
-                        <a># FD: </a><a id="num_fd"></a>
-                    </th>
-                    <th>
-                        <a># Synonym OFD: </a><a id="num_syn_ofd"></a>
-                    </th>
-                    <th>
-                        <a># Inheritance OFD: </a><a id="num_inh_ofd"></a>
-                    </th>
-                    <th>
-                        <a># Synonym Approximate OFD: </a> <a id="num_syn_aofd"></a>
-                    </th>
-                    <th>
-                        <a> # Inheritance Approximate OFD: </a> <a id="num_inh_aofd"></a>
-                    </th>
+                    <!--<th>-->
+                    <!--<a># FD: </a><a id="num_fd"></a>-->
+                    <!--</th>-->
+                    <td>
+                        <span># Synonym OFD: </span><span id="num_syn_ofd"></span>
+                    </td>
+                    <td>
+                        <span># Inheritance OFD: </span><span id="num_inh_ofd"></span>
+                    </td>
+                    <td>
+                        <span> Running time: </span> <span id="running_time"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><span># Approximate Syn OFD: </span> <span id="num_syn_aofd"></span>
+                    </td>
+                    <td>
+                        <span> # Approximate Inh OFD: </span> <span id="num_inh_aofd"></span>
+                    </td>
 
                 </tr>
                 </thead>
@@ -110,17 +116,14 @@
         </div>
     </div>
 </div>
-
 <section>
-    <legend style="margin-left: 20px;margin-top:-10px"><span class="glyphicon glyphicon-search"
-                                                             aria-hidden="true"></span> Details
+    <legend style="margin-left: 20px;margin-top:-10px"><span class="label label-default">Details</span>
     </legend>
     <div class="container-fluid" style="margin-top:-20px">
         <div class="row-fluid">
             <div class="span12">
                 <div class="tabbable" id="tabs-10414">
                     <ul class="nav nav-tabs">
-
                         <li>
                             <a href="#panel-syn_ofd" data-toggle="tab">Synonym </a>
                         </li>
@@ -174,6 +177,39 @@
                         </div>
                         <div class="tab-pane" id="panel-inh_ofd">
 
+                            <div class="container-fluid">
+                                <div class="row-fluid">
+                                    <div class="span12">
+                                        <div class="accordion" id="accordion-2293034">
+                                            <div class="accordion-group">
+                                                <div class="accordion-heading">
+                                                    <a class="accordion-toggle collapsed" data-toggle="collapse"
+                                                       data-parent="#accordion-2293034" href="#accordion-element-112555"
+                                                       style="margin-top:-10px"><h4>OFD</h4></a>
+                                                </div>
+                                                <div id="accordion-element-112555" class="accordion-body collapse">
+                                                    <div class="accordion-inner" id="inh_ofd_list">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-group">
+                                                <div class="accordion-heading">
+                                                    <a class="accordion-toggle" data-toggle="collapse"
+                                                       data-parent="#accordion-2293034" href="#accordion-element-639786"
+                                                       style="margin-top:-10px"><h4>Approximate OFD</span>
+                                                    </h4></a>
+                                                </div>
+                                                <div id="accordion-element-639786" class="accordion-body collapse">
+                                                    <div class="accordion-inner" id="panel-inh_aofd">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
 
                         </div>
 
@@ -188,6 +224,26 @@
     </div>
 </section>
 
+
+<div class="row">
+
+    <form action="compare" method="post">
+
+        <input type="hidden" id="history" value="a" name="history">
+        <input type="submit"
+               class="btn btn-large btn-success"
+               name="submit"
+               value="Algorithm Comparison"
+               style="width:300px;
+                      margin-left:30px;
+                      margin-top:30px"
+        >
+    </form>
+
+</div>
+</div>
+</div>
+
 <script>
 
     obj = JSON.parse({{result|tojson}});
@@ -199,6 +255,7 @@
     var num_inh_ofd=obj.NUM_INH_OFD;
     var num_syn_aofd=obj.NUM_SYN_AOFD;
     var num_inh_aofd=obj.NUM_INH_AOFD;
+    var running_time=obj.RUNNING_TIME;
     var attributes= obj.ATTRIBUTES;
     var syn_ofd=obj.OFD[1];
     var inh_ofd=obj.OFD[2];
@@ -210,12 +267,12 @@
         parent.innerHTML="  "+num;
     }
 
-    <!--addInfo("num_row",num_row);-->
+    addInfo("num_row",num_row);
     addInfo("num_col",num_col);
     addInfo("data_name",data_name);
     addInfo("num_ontologies",num_ontologies);
+     addInfo("running_time",running_time);
 
-    addInfo("num_fd",num_fd);
     addInfo("num_syn_ofd",num_syn_ofd);
     addInfo("num_inh_ofd",num_inh_ofd);
     addInfo("num_syn_aofd",num_syn_aofd);
@@ -249,26 +306,24 @@
         }
     }
     postD("syn_ofd_list",syn_ofd);
-    <!--postD("",ofd);-->
-
-
+    postD("inh_ofd_list",inh_ofd);
 
 
     var aofds = obj.AOFD;
+
     var syn_aofd = aofds[0];
-    var isa_aofd = aofds[1];
+    var inh_aofd = aofds[1];
 
 
     var syn_aofd_panel = document.getElementById("panel-syn_aofd");
-
-    <!--var isaaofd_panel = document.getElementById("panel-isa_aofd");-->
+    var inh_aofd_panel = document.getElementById("panel-inh_aofd");
 
     var validate = {};
 
     var support_dict = {};
 
     createAccordion(syn_aofd, syn_aofd_panel);
-    <!--createAccordion(isa_aofd, isa_aofd_panel);-->
+    createAccordion(inh_aofd, inh_aofd_panel);
 
     function createAccordion(list, panel) {
 
@@ -280,8 +335,11 @@
         accordionGroup.className = "accordion-group";
         var accordionHeading = document.createElement("div");
         accordionHeading.className = "accordion-heading";
+
+
+
         var accordionToggle = document.createElement("a");
-        accordionToggle.className = "accordion-toggle";
+        accordionToggle.className = "accordion-toggle change_arrow";
         accordionToggle.setAttribute("href", "#" + list[i].ID + list[i].TYPE);
         accordionToggle.setAttribute("data-toggle", "collapse");
         accordionToggle.setAttribute("data-parent", "#" + list[i].ID);
@@ -289,19 +347,10 @@
 
 
         accordionToggle.setAttribute("font-size","50px");
-
         var myArray=new Array();
         myArray[0]=list[i].NUMBER_OF_ERROR;
         myArray[1]=list[i].TOTAL;
         support_dict[String(list[i].ID)]=myArray;
-        <!--alert(list[i].ID);-->
-        <!--alert(myArray);-->
-        <!--var row = document.createElement("div");-->
-        <!--row.className="row";-->
-        <!--var col1=document.createElement("div");-->
-        <!--col1.className="col-lg-5";-->
-        <!--var col2=document.createElement("div");-->
-        <!--col2.className="col-lg-4";-->
 
         var error_space = document.createElement("h7");
         <!--error_space.style.marginLeft="0px";-->
@@ -309,9 +358,9 @@
         span.id=list[i].ID+"span";
         <!--span.setAttribute("class","label label-default");-->
 
-        var support = (100-list[i].ERROR_RATE)/100;
+        var support = list[i].ERROR_RATE;
         var str_support=support.toString()
-        span.innerHTML="Support &tau;:  "+ str_support;
+        span.innerHTML="&tau;:  "+ str_support;
         error_space.append(span);
         error_space.style.marginLeft="40px";
 
@@ -322,9 +371,6 @@
         span2.innerHTML="Sense: "+list[i].SENSE;
         this_sense.append(span2);
         this_sense.style.marginLeft="40px";
-
-
-
 
         <!--col1.append(accordionToggle);-->
         <!--col2.append(error_space);-->
@@ -391,7 +437,7 @@
                 }
 
                 var td = document.createElement("td");
-                td.innerHTML=tuple.FREQUENCY;
+                td.innerHTML=tuple.FREQUENCY*10;
                 tr.append(td);
 
                 tbody.append(tr);
@@ -446,6 +492,14 @@
         }
 
         accordionBody.append(accordionInner);
+
+        <!--var arrow = document.createElement("span");-->
+        <!--arrow.className="glyphicon glyphicon-triangle-right";-->
+        <!--arrow.setAttribute=("aria-hidden","true");-->
+
+        <!--accordionHeading.append(arrow);-->
+
+
         accordionHeading.append(accordionToggle);
 
         accordionHeading.append(error_space);
@@ -461,27 +515,52 @@
 
 
 $(document).ready(function () {
+
     function in_array(string, arr) {
+        string=trima(string);
     for (var i = 0; i < arr.length; i++){
+        arr[i]=trima(arr[i]);
         if (string.toLowerCase() == arr[i].toLowerCase()) {
             return true;
         }
     }
     return false;
-}
+    }
+
+    function trima(str){
+        return str.replace(/^(\s|\u00A0)+/,'').replace(/(\s|\u00A0)+$/,'');
+    }
+
+
+
   $(".editbtn").click(function () {
-        //alert($(this).parent().prev().val());
+
+
+
+        var new_value=$(this).parent().parent().prev().children().val();
+
+        var holder=$(this).parent().parent().prev().children();
+        var old_value=holder.attr("placeholder");
+
+        var result_check="";
+
+        var old_support="";
+
+
+
+
+        var new_support="";
+
         var thisid = $(this).attr('id');
         idvalue=thisid.split("*")[0];
-        <!--alert(idvalue);-->
         var array =support_dict[String(idvalue)];
-        <!--alert(array);-->
+        numerror=support_dict[idvalue][0];
+        numtotal=support_dict[idvalue][1];
 
-        numerror=support_dict[idvalue][0]
-        numtotal=support_dict[idvalue][1]
 
-        if (in_array($(this).parent().prev().val(), validate[$(this).attr("id")])) {
+        if (in_array($(this).parent().parent().prev().children().val(), validate[$(this).attr("id")])) {
 
+            result_check="TRUE";
             $(this).closest("tr").attr("class","success");
             alert("correct fix!");
 
@@ -489,61 +568,41 @@ $(document).ready(function () {
 
             t=1-numerror/numtotal;
 
+            strt=t.toFixed(3);
+
+            new_support=strt;
+
             var span = document.getElementById(idvalue+"span");
-            span.innerHTML="Support &tau;： "+ String(t);
-            alert("Now, the support &tau; is: "+String(t));
+            span.innerHTML="&tau;： "+ strt;
+            alert("Now, the &tau; is: "+ strt);
             support_dict[idvalue][0]=numerror;
-
-            <!--alert(idvalue);-->
-            <!--alert(span.id);-->
-            <!--alert(t);-->
-
-            <!--support_dict[idvalue][0]=numerror;-->
-
             span.setAttribute("class","label label-success");
 
-
-            // document.getElementById("fix_tr").className="success";
         } else {
-
+            result_check="FALSE";
             if ($(this).closest("tr").attr("class") == "danger"){
-
             alert("wrong fix!");
-
             }
             else{
-
             $(this).closest("tr").attr("class","danger");
             alert("wrong fix!");
-
-            <!--numerror=numerror+1;-->
-
+            numerror=numerror+1;
             t=1-numerror/numtotal;
+            strt=t.toFixed(3)
+            new_support=strt;
             var span = document.getElementById(idvalue+"span");
-            span.innerHTML="Support &tau;： "+ String(t);
-            <!--alert(idvalue);-->
-            <!--alert(span.id);-->
-            alert("Now, the support &tau; is"+String(t));
+            span.innerHTML="&tau;： "+ strt;
+            alert("Now, the &tau; is"+strt);
             support_dict[idvalue][0]=numerror;
-
-            <!--span.setAttribute("class","label label-success");-->
-
             span.setAttribute("class","label label-danger");
-
             }
         }
+
+    });
 
 
 
     });
-});
-
-
-
-
-
-
-
 
 
 
