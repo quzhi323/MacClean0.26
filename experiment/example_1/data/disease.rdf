@@ -13,7 +13,15 @@
 		<ex:is_a rdf:resource="http://example.org/arthritis"/>
 	</rdf:Description>	
 	
-	<rdf:Description rdf:about="http://example.org/tension">
+	<rdf:Description rdf:about="http://example.org/depression">
+		<ex:is_a rdf:resource="http://example.org/anxiety"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="http://example.org/obsessive-compulsive_disorder">
+		<ex:is_a rdf:resource="http://example.org/anxiety"/>
+	</rdf:Description>
+	
+	<rdf:Description rdf:about="http://example.org/OCD">
 		<ex:is_a rdf:resource="http://example.org/anxiety"/>
 	</rdf:Description>	
 	

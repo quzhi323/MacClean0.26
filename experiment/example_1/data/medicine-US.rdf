@@ -20,5 +20,10 @@
 	</rdf:Description>	
 	<rdf:Description rdf:about="http://example.org/CoZaar">
 		<ex:is_a rdf:resource="http://example.org/Zocor"/>
-	</rdf:Description>	
+	</rdf:Description>
+
+	<rdf:Description rdf:about="http://example.org/sertraline">
+		<ex:is_a rdf:resource="http://example.org/Zoloft"/>
+	</rdf:Description>
+	
 </rdf:RDF>

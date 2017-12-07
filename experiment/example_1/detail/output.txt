@@ -1,0 +1,19 @@
+FD: countrycode --> country
+SYN_AOFD_ER (in the sense of ads): disease --> countrycode (0.6443333333333333)
+SYN_AOFD_ER (in the sense of ads): medicine --> countrycode (0.5783333333333334)
+SYN_AOFD_ER (in the sense of ads): status --> countrycode (0.7503333333333333)
+SYN_AOFD_ER (in the sense of ads): study_design --> countrycode (0.7003333333333334)
+SYN_AOFD_ER (in the sense of ads): disease, medicine --> countrycode (0.5603333333333333)
+SYN_AOFD_ER (in the sense of ads): disease, status --> countrycode (0.5696666666666667)
+SYN_AOFD_ER (in the sense of ads): disease, study_design --> countrycode (0.5376666666666666)
+SYN_AOFD_ER (in the sense of ads): medicine, status --> countrycode (0.5036666666666667)
+SYN_AOFD_ER (in the sense of ads): medicine, study_design --> countrycode (0.4766666666666667)
+SYN_AOFD_ER (in the sense of ads): status, study_design --> countrycode (0.6753333333333333)
+SYN_AOFD_ER (in the sense of ads): disease, medicine, status --> countrycode (0.49133333333333334)
+SYN_AOFD_ER (in the sense of ads): disease, medicine, study_design --> countrycode (0.458)
+SYN_AOFD_ER (in the sense of ads): disease, status, study_design --> countrycode (0.4886666666666667)
+SYN_AOFD_ER (in the sense of ads): medicine, status, study_design --> countrycode (0.45066666666666666)
+SYN_AOFD_ER (in the sense of ads): disease, medicine, status, study_design --> countrycode (0.437)
+SYN_OFD: country --> countrycode*ads
+------------------------------------------------------
+Running Time:1432 (ms) 0 (min) 0 (hour)

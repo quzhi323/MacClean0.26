@@ -2,5 +2,9 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/experiment/example_1/data/data.csv" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/experiment/example_2/data/data.csv" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/experiment/example_3/data/data.csv" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/experiment/example_3/data/data.csv" charset="US-ASCII" />
+    <file url="file://$PROJECT_DIR$/experiment/example_3/detail/._output.txt" charset="US-ASCII" />
   </component>
 </project>
