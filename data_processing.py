@@ -257,9 +257,12 @@ def sort_hierachy(hierachy,dict):
 
     parents.sort(key=lambda x: dict[x["ID"]]["ERROR_RATE"], reverse=True)
 
+
     for parent in parents:
 
         kids = parent['CHILDREN']
+
+        kids.append(parent['ID'])
 
         kids.sort(key=lambda x: dict[x]["ERROR_RATE"], reverse=True)
 

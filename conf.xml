@@ -12,11 +12,19 @@
 			<Tane>false</Tane>
 		</data>
 		<ontology>
-			<name>countrycode</name>
-			<threshold>0.8</threshold>
-			<path>experiment//example_1//data//UN.rdf</path>
+			<name>medicin</name>
+			<threshold>0.7</threshold>
+			<path>experiment//example_1//data//medicine-US.rdf</path>
 			<type>Minimum_Error</type>
-			<sense>ads</sense>
+			<sense>US</sense>
+			<class>syn</class>
+		</ontology>
+		<ontology>
+			<name>medicine</name>
+			<threshold>0.7</threshold>
+			<path>experiment//example_1//data//medicine-EU.rdf</path>
+			<type>Minimum_Error</type>
+			<sense>EU</sense>
 			<class>syn</class>
 		</ontology>
 	</Config>

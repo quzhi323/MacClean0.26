@@ -347,9 +347,8 @@
          var hierachy=hierachy.HIERARCHY;
          for(var i = 0; i < hierachy.length;i++){
              var parent_id = hierachy[i].ID;
-             var parent = syn_aofd_dict[parent_id];
+             var parent = aofd_dict[parent_id];
              var sons_id = hierachy[i].CHILDREN;
-
              var accordion = document.createElement("div");
              accordion.className = 'accordion';
              accordion.id = "parent"+parent_id;
@@ -357,7 +356,6 @@
              accordionGroup.className = "accordion-group";
              var accordionHeading = document.createElement("div");
              accordionHeading.className = "accordion-heading";
-
              var accordionToggle = document.createElement("a");
              accordionToggle.className = "accordion-toggle change_arrow";
              accordionToggle.setAttribute("href", "#" + parent.ID +"toListAndClean");
@@ -375,8 +373,8 @@
              var ListandClean = document.createElement("div");
              ListandClean.style.marginLeft="5%";
 
-             var makeparentlist=new Array(parent);
-             createAccordion(makeparentlist, ListandClean);
+             <!--var makeparentlist=new Array(parent);-->
+             <!--createAccordion(makeparentlist, ListandClean);-->
              for(var x = 0;x<sons_id.length;x++){
                  var son_id = sons_id[x];
                  var son = aofd_dict[son_id];

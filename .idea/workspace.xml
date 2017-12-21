@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0839c8e0-14b1-4ec7-a8f7-9b2c0aeda380" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/experiment/example_1/detail/disease, medicine, status, study_design--countrycode-1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/experiment/example_1/detail/disease, medicine, study_design--countrycode-1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/experiment/example_1/detail/disease--medicine-1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/experiment/example_1/detail/medicine--disease-1.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/experiment/example_2/detail/age, education, hours-per-week--native-country.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/experiment/example_2/detail/age, education, occupation--native-country.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/experiment/example_2/detail/age, education--native-country.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/experiment/example_2/detail/age, workclass, occupation, race--native-country.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/experiment/example_2/detail/workclass, education, hours-per-week, salary--native-country.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf.xml" afterPath="$PROJECT_DIR$/conf.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_processing.py" afterPath="$PROJECT_DIR$/data_processing.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_1/detail/country--countrycode(2).json" afterPath="$PROJECT_DIR$/experiment/example_1/detail/country--countrycode(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_1/detail/output.txt" afterPath="$PROJECT_DIR$/experiment/example_1/detail/output.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_2/detail/age, education, hours-per-week--native-country(2).json" afterPath="$PROJECT_DIR$/experiment/example_2/detail/age, education, hours-per-week--native-country(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_2/detail/age, education, occupation--native-country(2).json" afterPath="$PROJECT_DIR$/experiment/example_2/detail/age, education, occupation--native-country(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_2/detail/age, education--native-country(2).json" afterPath="$PROJECT_DIR$/experiment/example_2/detail/age, education--native-country(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_2/detail/age, workclass, occupation, race--native-country(2).json" afterPath="$PROJECT_DIR$/experiment/example_2/detail/age, workclass, occupation, race--native-country(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_2/detail/output.txt" afterPath="$PROJECT_DIR$/experiment/example_2/detail/output.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_2/detail/workclass, education, hours-per-week, salary--native-country(2).json" afterPath="$PROJECT_DIR$/experiment/example_2/detail/workclass, education, hours-per-week, salary--native-country(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, CAS_Number--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, CAS_Number--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Group, Quantity--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Group, Quantity--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Quantity, Units--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Quantity, Units--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Quantity--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Quantity--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Substance_Name, Group--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Substance_Name, Group--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Substance_Name, Quantity--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Substance_Name, Quantity--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Substance_Name, Units--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Substance_Name, Units--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Substance_Name--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Substance_Name--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, CAS_Number--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, CAS_Number--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Category--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Category--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Company_Name, Group--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Company_Name, Group--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Company_Name--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Company_Name--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name--Province(2).json" afterPath="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name--Province(2).json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/output2.html" afterPath="$PROJECT_DIR$/templates/output2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/tane_rsl.html" afterPath="$PROJECT_DIR$/templates/tane_rsl.html" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="myproject.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/myproject.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="357" column="17" lean-forward="false" selection-start-line="357" selection-start-column="17" selection-end-line="357" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_processing.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_processing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="373">
+              <caret line="259" column="0" lean-forward="true" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="output2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/output2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="374" column="0" lean-forward="false" selection-start-line="374" selection-start-column="0" selection-end-line="374" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>Threshold</find>
+      <find>Add ontology</find>
+      <find>add on tol</find>
+      <find>clinical</find>
+      <find>'tane'+</find>
+      <find>validate</find>
+      <find>print</find>
+      <find>anxiety</find>
+      <find>warning</find>
+      <find>previous</find>
+      <find>next</find>
+      <find>http</find>
+      <find>0.1</find>
+      <find>fre</find>
+      <find>re</find>
+      <find>unav</find>
+      <find>anxiety?</find>
+      <find>500</find>
+      <find>hypercholesterolemia</find>
+      <find>&quot;ca,active&quot;</find>
+      <find>add ontology</find>
+      <find>support</find>
+      <find>support_dict</find>
+      <find>freq</find>
+      <find>alert</find>
+      <find>wrong</find>
+      <find>comp</find>
+      <find>TYPE</find>
+      <find>num_ontologies</find>
+      <find>Ontology</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/experiment/example_3/data/data.csv" />
+        <option value="$PROJECT_DIR$/experiment/example_2/detail/age, education, hours-per-week, salary--native-country(2).json" />
+        <option value="$PROJECT_DIR$/experiment/example_2/detail/age, education, marital-status, occupation, hours-per-week, salary--native-country(2).json" />
+        <option value="$PROJECT_DIR$/experiment/example_2/detail/age, education, marital-status, occupation, relationship, sex, hours-per-week, salary--native-country(2).json" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/country, disease, status, study_design--medicine.json" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/country, disease, status--medicine.json" />
+        <option value="$PROJECT_DIR$/experiment/upload/data/data.csv" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/country, disease, status, study_design--medicine(2).json" />
+        <option value="$PROJECT_DIR$/testbat.py" />
+        <option value="$PROJECT_DIR$/experiment/example_1/data/data.csv" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/countrycode, status--disease.json" />
+        <option value="$PROJECT_DIR$/running.bat" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/country--countrycode(2).json" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/disease, medicine, status, study_design--countrycode(2).json" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/status, study_design--countrycode.json" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/medicine--countrycode.json" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/medicine, study_design--countrycode.json" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/output.txt" />
+        <option value="$PROJECT_DIR$/experiment/example_3/detail/CAS_Number, Category--Province(2)(ISO).json" />
+        <option value="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Company_Name, Group, Quantity--Province(2)(ISO).json" />
+        <option value="$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Substance_Name, Quantity--Province(2)(ISO).json" />
+        <option value="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Company_Name, Substance_Name, Group--Province(2)(ISO).json" />
+        <option value="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Company_Name, Quantity--Province(2)(ISO).json" />
+        <option value="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Company_Name, Substance_Name, Quantity--Province(2)(ISO).json" />
+        <option value="$PROJECT_DIR$/experiment/example_3/detail/CAS_Number, Category--Province.json" />
+        <option value="$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, CAS_Number--Province.json" />
+        <option value="$PROJECT_DIR$/conf.xml" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/country, medicine, status, study_design--disease.json" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/disease, medicine, status, study_design--countrycode(2)(n).json" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/templates/compare.html" />
+        <option value="$PROJECT_DIR$/templates/input.html" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/hierarchy.json" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/country--countrycode(2)(UN).json" />
+        <option value="$PROJECT_DIR$/experiment/example_2/detail/age, education, hours-per-week, salary--native-country(2)(d).json" />
+        <option value="$PROJECT_DIR$/experiment/example_2/detail/age, education, marital-status, race--native-country.json" />
+        <option value="$PROJECT_DIR$/experiment/example_2/detail/age, education, hours-per-week, salary--native-country(2)(Isf).json" />
+        <option value="$PROJECT_DIR$/experiment/example_2/data/data.csv" />
+        <option value="$PROJECT_DIR$/experiment/example_2/detail/occupation--native-country.json" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/disease, medicine, status, study_design--countrycode.json" />
+        <option value="$PROJECT_DIR$/experiment/example_2/detail/output.txt" />
+        <option value="$PROJECT_DIR$/experiment/example_2/detail/hierarchy_syn.json" />
+        <option value="$PROJECT_DIR$/experiment/example_2/detail/hierarchy_isa.json" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/hierarchy_syn.json" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/disease, status, study_design--countrycode.json" />
+        <option value="$PROJECT_DIR$/templates/output.html" />
+        <option value="$PROJECT_DIR$/templates/tane_rsl.html" />
+        <option value="$PROJECT_DIR$/experiment/example_1/detail/hierarchy_isa.json" />
+        <option value="$PROJECT_DIR$/templates/output2.html" />
+        <option value="$PROJECT_DIR$/myproject.py" />
+        <option value="$PROJECT_DIR$/data_processing.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="37" />
+    <option name="width" value="1280" />
+    <option name="height" value="726" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Buildout</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MacClean17" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MacClean17" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="js.eslint.eslintPackage" value="" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="PyDebuggerOptionsProvider">
+    <option name="mySaveCallSignatures" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/experiment/example_1/data" />
+      <recent name="$PROJECT_DIR$/experiment/example_3/data" />
+      <recent name="$PROJECT_DIR$/experiment/example_3/detail" />
+      <recent name="$PROJECT_DIR$/experiment/example_3" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/experiment/example_1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MacClean0.26" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/myproject.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="testbat" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MacClean0.26" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testbat.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="MacClean0.26" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Python.test" />
+      <item index="1" class="java.lang.String" itemvalue="Python.main" />
+      <item index="2" class="java.lang.String" itemvalue="Python.testbat" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0839c8e0-14b1-4ec7-a8f7-9b2c0aeda380" name="Default" comment="" />
+      <created>1511214563627</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1511214563627</updated>
+      <workItem from="1511222237189" duration="14617000" />
+      <workItem from="1511240977072" duration="7000" />
+      <workItem from="1511242302613" duration="685000" />
+      <workItem from="1511243196530" duration="881000" />
+      <workItem from="1511244205798" duration="1593000" />
+      <workItem from="1511246812140" duration="3908000" />
+      <workItem from="1511250851734" duration="5099000" />
+      <workItem from="1511262729555" duration="804000" />
+      <workItem from="1511263660371" duration="296000" />
+      <workItem from="1511278759861" duration="1618000" />
+      <workItem from="1511280638862" duration="1595000" />
+      <workItem from="1511287254097" duration="606000" />
+      <workItem from="1511288862610" duration="1000" />
+      <workItem from="1512025129192" duration="1824000" />
+      <workItem from="1512066740456" duration="578000" />
+      <workItem from="1512421968297" duration="2074000" />
+      <workItem from="1512424371105" duration="431000" />
+      <workItem from="1512430328472" duration="2168000" />
+      <workItem from="1512434204443" duration="8763000" />
+      <workItem from="1512446401867" duration="41000" />
+      <workItem from="1512480096739" duration="2591000" />
+      <workItem from="1512504977924" duration="3509000" />
+      <workItem from="1512511159917" duration="721000" />
+      <workItem from="1512512750968" duration="1121000" />
+      <workItem from="1512577712701" duration="1697000" />
+      <workItem from="1512583678702" duration="1436000" />
+      <workItem from="1512586666219" duration="3449000" />
+      <workItem from="1512661552349" duration="130000" />
+      <workItem from="1512662466580" duration="4841000" />
+      <workItem from="1513002367169" duration="647000" />
+    </task>
+    <task id="LOCAL-00001" summary="clr">
+      <created>1511239043068</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1511239043068</updated>
+    </task>
+    <task id="LOCAL-00002" summary="selectable">
+      <created>1511244215551</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1511244215552</updated>
+    </task>
+    <task id="LOCAL-00003" summary="connected">
+      <created>1511397298740</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1511397298740</updated>
+    </task>
+    <task id="LOCAL-00004" summary="connected">
+      <created>1511450421283</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1511450421284</updated>
+    </task>
+    <task id="LOCAL-00005" summary="color">
+      <created>1511451067121</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1511451067121</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add AOFD Hierarchy and Sort Hierarchy">
+      <created>1512684182350</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1512684182350</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="67731000" />
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="37" width="1280" height="726" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1056394" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29589042" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09863014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39863014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29589042" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.09863014" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36328125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32739726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39863014" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="clr" />
+    <MESSAGE value="selectable" />
+    <MESSAGE value="connected" />
+    <MESSAGE value="color" />
+    <MESSAGE value="Add AOFD Hierarchy and Sort Hierarchy" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add AOFD Hierarchy and Sort Hierarchy" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/experiment/upload/detail/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/country, disease, status, study_design--medicine(2).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/data/data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="49" lean-forward="false" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/countrycode, status--disease.json" />
+    <entry file="file://$PROJECT_DIR$/templates/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/running.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testbat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/disease, medicine, status, study_design--countrycode(2).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/country--countrycode(2).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/medicine--countrycode.json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/status, study_design--countrycode.json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/medicine, study_design--countrycode.json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_3/data/data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_3/data/Province.rdf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="55" lean-forward="false" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_3/detail/CAS_Number, Category--Province(2)(ISO).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Company_Name, Group, Quantity--Province(2)(ISO).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_3/detail/Company_Name, Substance_Name, Quantity--Province(2)(ISO).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Company_Name, Quantity--Province(2)(ISO).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Company_Name, Substance_Name, Group--Province(2)(ISO).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, CAS_Number--Province(2)(ISO).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, Company_Name, Substance_Name, Quantity--Province(2)(ISO).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_3/detail/CAS_Number, Category--Province.json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_3/detail/Facility_Name, CAS_Number--Province.json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_3/detail/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" lean-forward="true" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/country, medicine, status, study_design--disease.json" />
+    <entry file="file://$PROJECT_DIR$/conf.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/disease, medicine, status, study_design--countrycode(2)(n).json" />
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/input.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="255" column="65" lean-forward="false" selection-start-line="255" selection-start-column="65" selection-end-line="255" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/hierarchy.json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_2/detail/age, education, marital-status, race--native-country.json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_2/detail/age, education, hours-per-week, salary--native-country(2)(d).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_2/detail/age, education, hours-per-week, salary--native-country(2)(Isf).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_2/data/data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/country--countrycode(2)(UN).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_2/detail/occupation--native-country.json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/disease, medicine, status, study_design--countrycode.json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/compare.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="461" column="55" lean-forward="true" selection-start-line="461" selection-start-column="55" selection-end-line="461" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_2/detail/race, hours-per-week, salary--native-country(2)(ISO).json" />
+    <entry file="file://$PROJECT_DIR$/experiment/example_2/detail/output.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6630">
+          <caret line="442" column="47" lean-forward="false" selection-start-line="442" selection-start-column="47" selection-end-line="442" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_2/detail/hierarchy_syn.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_2/detail/hierarchy_isa.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" lean-forward="false" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/disease, status, study_design--countrycode.json" />
+    <entry file="file://$PROJECT_DIR$/templates/output.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8670">
+          <caret line="582" column="17" lean-forward="false" selection-start-line="582" selection-start-column="17" selection-end-line="582" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/hierarchy_syn.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="62" lean-forward="false" selection-start-line="0" selection-start-column="62" selection-end-line="0" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/tane_rsl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="122" column="10" lean-forward="false" selection-start-line="122" selection-start-column="10" selection-end-line="122" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/experiment/example_1/detail/hierarchy_isa.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11" lean-forward="false" selection-start-line="0" selection-start-column="11" selection-end-line="0" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/output2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="374" column="0" lean-forward="false" selection-start-line="374" selection-start-column="0" selection-end-line="374" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="259" column="0" lean-forward="true" selection-start-line="259" selection-start-column="0" selection-end-line="259" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/myproject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="357" column="17" lean-forward="false" selection-start-line="357" selection-start-column="17" selection-end-line="357" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
